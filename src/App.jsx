@@ -30,8 +30,9 @@ console.log(contries)
   return (
     <>
       
-      <div className='super'>
+      <div >
 
+        <section className='super'>
         <form onSubmit={handleSubmit}>
           <input type="text"  ref={textInput}/>
           <button>buscar</button>
@@ -42,6 +43,8 @@ console.log(contries)
           <option value="English">English</option>
           <option value="Quechua">Quechua</option>
         </select>
+        </section>
+      <section className='super'>
       {
         contries?.map(contry=>(
           <ContryCard
@@ -50,6 +53,7 @@ console.log(contries)
           />
         ))
       }
+      </section>
       
       </div>
       
