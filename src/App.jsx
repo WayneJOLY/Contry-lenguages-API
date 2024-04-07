@@ -26,34 +26,34 @@ console.log(contries)
       setSearch(e.target.value)
      }
 
-console.log(contries)
+
   return (
     <>
       
-      <div >
+      <div className='main' >
 
-        <section className='super'>
-        <form onSubmit={handleSubmit}>
-          <input type="text"  ref={textInput}/>
-          <button>buscar</button>
-        </form>
-        <select onChange={handleChange}>
-          <option value="Spanish">Spanish</option>
-          <option value="French">French</option>
-          <option value="English">English</option>
-          <option value="Quechua">Quechua</option>
-        </select>
-        </section>
-      <section className='super'>
-      {
-        contries?.map(contry=>(
-          <ContryCard
-          key={contry.name.common}
-          contry={contry}
-          />
-        ))
-      }
-      </section>
+            <section className='changers'>
+                <form onSubmit={handleSubmit}>
+                  <input type="text" placeholder='Inter the lenguage you whant'  ref={textInput}/>
+                  <button>buscar</button>
+                </form>
+                <select onChange={handleChange}>
+                  <option value="Spanish">Spanish</option>
+                  <option value="French">French</option>
+                  <option value="English">English</option>
+                  <option value="Quechua">Quechua</option>
+            </select>
+            </section>
+          <section className='contry-card'>
+          {
+            contries?.map(contry=>(
+              <ContryCard
+              key={contry.name.common}
+              contry={contry}
+              />
+            ))
+          }
+          </section>
       
       </div>
       

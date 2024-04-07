@@ -1,29 +1,49 @@
 *{
  list-style: none;
- color: aqua;
+ color: rgb(0, 60, 255);
+ background-color:#222121fe;
 }
-.main{
-  width: 300px;
-  height: 500px;
+form{
+  width: clamp(70px,50%,70%);
+  background-color: blueviolet;
+  flex-wrap: nowrap;
+}
+input{
+  width: 70%;
+  height: 100%;
+  background-color: aliceblue;
+  margin: 5px 10px;
+}
+button{
+  width: 20%;
+
+}
+.changers{
+display: flex;
+justify-content: space-between;
+align-items: end;
+margin: 20px 30px;
+}
+.contry-card
+{
+  width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   margin: 20px 10px ;
-  justify-content: center;
-  background : blur(10px);
+  
 }
-.super
-{
+.main{
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-evenly;
-  background-color:#0c0c0c;
+  flex-direction: column;
 }
 
 .flag{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
+  padding: 20px 30px;
 }
 img{
   width: 100%;
