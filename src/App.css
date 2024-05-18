@@ -7,12 +7,17 @@
    --bg_color:#222121fe;
    --main_color:rgb(0, 60, 255);
  }
+
+ .main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
  .changers{
    display: flex;
    justify-content: space-between;
    align-items: end;
    margin: 20px 30px;
-   border: 1px dashed white;
    }
  form{
    background-color: transparent;
@@ -22,18 +27,23 @@
    height: 100%g;
    background-color: aliceblue;
    border-radius: 10px 0 0 10px ;
+   font-size: 20px;
+   padding-left: 10px;
  }
  button{
    border: none;
    border-radius: 0 10px 10px 0;
    background-color: var(--main_color);
    color: var(--bg_color);
+   font-size: 20px;
  }
  
  
  select{
  
- border: none;
+ border:3px solid white;
+ font-size: 20px;
+ padding: 5px 10px;
  }
  .contry-card
  {
@@ -41,14 +51,10 @@
    height: auto;
    display: flex;
    flex-wrap: wrap;
-   margin: 20px 10px ;
+   margin: 20px auto ;
    
  }
- .main{
-   display: flex;
-   flex-direction: column;
-   border: 2px solid var(--main_color);
- }
+ 
  
  .flag{
    display: flex;

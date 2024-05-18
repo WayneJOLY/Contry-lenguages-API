@@ -34,7 +34,7 @@ console.log(contries)
 
             <section className='changers'>
                 <form onSubmit={handleSubmit}>
-                  <input type="text" placeholder='Inter the lenguage you whant'  ref={textInput}/>
+                  <input type="text" placeholder='Inter the lenguage'  ref={textInput}/>
                   <button>buscar</button>
                 </form>
                 <select onChange={handleChange}>
