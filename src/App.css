@@ -1,6 +1,6 @@
 *{
   list-style: none;
-  color: rgb(0, 60, 255);
+  color: rgb(245, 246, 249);
   background-color:#222121fe;
  }
  :root{
@@ -41,7 +41,7 @@
  
  select{
  
- border:3px solid white;
+ border:3px solid var(--bg_color);
  font-size: 20px;
  padding: 5px 10px;
  }
@@ -55,6 +55,10 @@
    
  }
  
+ .contry-card ul li{
+  text-transform: capitalize;
+  font-size: 20px;
+ }
  
  .flag{
    display: flex;
